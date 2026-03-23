@@ -4,6 +4,10 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:
+env:
+  USER_LOGIN: ${{ secrets.USER_LOGIN }}
+  USER_PASSWORD: ${{ secrets.PASSWORD }}
 jobs:
   test:
     timeout-minutes: 60
