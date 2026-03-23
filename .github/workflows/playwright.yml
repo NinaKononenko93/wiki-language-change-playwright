@@ -6,7 +6,7 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 env:
-  USER_LOGIN: ${{ secrets.USER_LOGIN }}
+  USER_LOGIN: ${{ secrets.USER_NAME }}
   USER_PASSWORD: ${{ secrets.PASSWORD }}
 jobs:
   test:
